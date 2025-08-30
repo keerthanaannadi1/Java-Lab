@@ -1,0 +1,59 @@
+package basic;
+
+class parametarized_constructor{
+
+	String Name;
+
+	String section;
+
+	int classRoomNo;
+
+	parametarized_constructor(){
+
+		System.out.println("Default Constructor"); // Default constructor with no parameters
+
+	}
+
+	parametarized_constructor(String Name){
+
+			System.out.println("Hello "+ Name); // One parameterized constructor
+
+	}
+
+	parametarized_constructor(String Name,String section){
+
+		System.out.println("Hello "+Name + " Welcome to "+section); // Two parameterized constructor
+
+		
+
+	}
+
+	parametarized_constructor(String Name,String section,int classRoomNo){
+
+		System.out.println("Hello "+Name + " Your Class Room No: "+classRoomNo); // Three parameterized constructor
+
+		
+
+	}
+
+}
+
+
+public class constructor {
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		parametarized_constructor con = new parametarized_constructor();  //no parameters
+
+		parametarized_constructor p1con = new parametarized_constructor("Meghana");  //one parameters
+
+		parametarized_constructor p2con = new parametarized_constructor("Meghana","CSE_E");  //two parameters
+
+		parametarized_constructor p3con = new parametarized_constructor("Meghana","CSE_E",206);  //three parameters
+
+	}
+
+}
