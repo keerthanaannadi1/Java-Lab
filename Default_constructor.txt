@@ -1,0 +1,31 @@
+package demo2;
+
+
+
+public class Constructor {
+
+
+    public static void main(String[] args) {
+
+       // create an object of ClassName using the default constructor
+
+        ClassName obj = new ClassName();
+
+        System.out.println("Object created");
+
+    }
+
+}
+
+
+class ClassName {
+
+    // default constructor
+
+    ClassName() {
+
+        System.out.println("Default constructor");
+
+    }
+
+}
